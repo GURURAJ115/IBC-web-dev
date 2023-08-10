@@ -1,25 +1,29 @@
-header{
-    position: relative;
-    background: white;
-    padding:0;
-    border-bottom: 1px solid black;
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: montserrat;
+}
+nav{
+    height:80px;
+    width: 100%;
+}
 
-} 
-
+.logo{
+    width:70px; 
+    height:70px;
+    margin-left: 10%;
+}
 a{
     color: black;
 }
 
-a:hover{
+.item:hover{
     background: lightslategrey;
     color:white;
     cursor:pointer;
-}
-
-.container{
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
 }
 
 ul{
@@ -39,25 +43,4 @@ a span{
     padding: 0.1rem 0.45rem;
     border-radius: 100rem;
     font-size:0.9rem;
-}
-
-.menu-container{
-    position:relative;
-}
-
-.menu{
-    position:absolute;
-    z-index:1;
-    background:whitesmoke;
-    display:none;
-
-}
-
-.menu-container:hover .menu{
-    display: block;
-}
-
-.menu a{
-    width: 100%;
-    min-width:8rem;
 }
