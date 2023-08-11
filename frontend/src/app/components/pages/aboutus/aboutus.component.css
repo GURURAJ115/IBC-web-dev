@@ -1,0 +1,32 @@
+.aboutus {
+    height: 1456px;
+    width: 1365px;
+    top: 100px;
+}
+
+.img-1 {
+    height: 435px;
+    width: 435px;
+    background-color: #d9d9d9;
+}
+
+.img-2 {
+    height: 435px;
+    width: 435px;
+    background-color: #d9d9d9;
+}
+
+.img-3 {
+    height: 435px;
+    width: 435px;
+    background-color: #d9d9d9;
+}
+
+.description {
+    text-align: left;
+    vertical-align: top;
+    font-size: 32px;
+    font-family: Garamond Premier Pro;
+    line-height: auto;
+    color: #000000;
+}

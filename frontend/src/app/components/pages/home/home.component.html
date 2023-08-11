@@ -1,15 +1,47 @@
-<div class="scrollable">
+<body>
     <div class="body">
-        <div class="topbackground"></div>
-        <div class="image-overlay"></div>
-        <p id="join">Join our <br>community<br></p>
-        <p id="embrace">Embrace spiritual growth! <br>Discover events, centers, classes, and volunteering, igniting your
-            soul's journey.<br> Unite with a like-minded community, seeking higher meaning and inner peace.
-            <br><br>Sign up now and be part of our dynamic journey together<br>
-        </p>
+        <div class="topcontainer">
+            <img src="assets/background.png" id="topbackground" />
+            <img src="assets/HomePageKrishna.png" id="topimage" />
+            <p id="join">Join our <br />community<br /></p>
+            <br /><br />
+            <p id="embrace">
+                Embrace spiritual growth! <br />Discover events, centers, classes, and
+                volunteering, igniting your soul's journey.<br />
+                Unite with a like-minded community, seeking higher meaning and inner
+                peace.
+                <br /><br />Sign up now and be part of our dynamic journey together<br />
+            </p>
 
+            <div class="submit">
+                <button type="submit" onclick="openForm()" id="signup" routerLink="/signup">SIGN UP</button>
+            </div>
+        </div>
+        <div id="popup">
+            <button class="close-btn" onclick="closeForm()">&times;</button>
+            <h2>Log In</h2>
+            <form>
+                <div class="input-group">
+                    <div class="input-field">
+                        <input type="email" placeholder="Username/Email" />
+                    </div>
+
+                    <div class="input-field">
+                        <input type="password" placeholder="Password" />
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="submit">
-        <button type="submit" id="signup">SIGN UP</button>
+    <div class="content">
+        <h1>Classes</h1>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="button">Go somewhere</a>
+            </div>
+        </div>
     </div>
-</div>
+</body>

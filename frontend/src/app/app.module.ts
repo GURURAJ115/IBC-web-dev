@@ -30,6 +30,10 @@ import { RouterModule } from '@angular/router';
     AppRoutingModule,
     RouterModule.forRoot([
       {
+        path:'',
+        component:HomeComponent
+      },
+      {
         path:'aboutus',
         component:AboutusComponent
       },

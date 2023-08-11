@@ -1,46 +1,82 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: montserrat;
+    padding: 0;
 }
-nav{
-    height:80px;
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: -40px
+}
+
+.navbar {
+    display: flex;
+    background-color: lightgrey;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.rightnav {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navicons {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.navicons li {
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.navlist li a:hover,
+a:active {
+    color: maroon;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.navlist {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.navlist li {
+    padding: 26px 20px;
+    font-weight: 400;
+    font-size: large;
+}
+
+.logo {
+    display: flex;
+    justify-content: centre;
+    align-items: centre;
+    padding: 10px;
+}
+
+.logo img {
     width: 100%;
 }
 
-.logo{
-    width:70px; 
-    height:70px;
-    margin-left: 10%;
-}
-a{
-    color: black;
-}
-
-.item:hover{
-    background: lightslategrey;
-    color:white;
-    cursor:pointer;
-}
-
-ul{
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-}
-
-ul a{
-    padding: 1rem;
+.signin button {
     display: inline-block;
+    color: white;
+    background-color: maroon;
+    width: 70px;
+    height: 30px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-a span{
-    background: grey;
-    color: white;
-    padding: 0.1rem 0.45rem;
-    border-radius: 100rem;
-    font-size:0.9rem;
+.signin {
+    align-items: center;
 }
