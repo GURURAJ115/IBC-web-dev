@@ -12,6 +12,8 @@ import { TempleComponent } from './components/pages/temple/temple.component';
 import { DonationsComponent } from './components/pages/donations/donations.component';
 import { SpComponent } from './components/pages/sp/sp.component';
 import { RouterModule } from '@angular/router';
+import { SignupComponent } from './components/pages/signup/signup.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -23,11 +25,13 @@ import { RouterModule } from '@angular/router';
     PagesComponent,
     TempleComponent,
     DonationsComponent,
-    SpComponent
+    SpComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MatDialogModule,
     RouterModule.forRoot([
       {
         path:'',
