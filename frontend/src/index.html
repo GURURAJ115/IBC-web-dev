@@ -10,4 +10,46 @@
 <body>
   <app-root></app-root>
 </body>
+<script>
+  function dispModal() {
+    const openButton = document.getElementById('signup');
+    const closeButton = document.getElementById('close');
+    const popup = document.getElementById('popup-sign');
+
+
+    openButton.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    window.setTimeout(() => {
+    button.innerText = '"click" me';
+  }, 2000);
+
+  }
+function displog(){
+    const openButton = document.getElementById('login');
+    const closeButton = document.getElementById('closelogin');
+    const popup = document.getElementById('loginpop');
+
+
+    openButton.addEventListener('click', () => {                          
+      popup.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    window.setTimeout(() => {
+    button.innerText = '"click" me';
+  }, 2000);
+
+
+}
+
+</script>
 </html>

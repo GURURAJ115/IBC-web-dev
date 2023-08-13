@@ -14,25 +14,84 @@
             </p>
 
             <div class="submit">
-                <button type="submit" onclick="openForm()" id="signup" routerLink="/signup">SIGN UP</button>
+                <button type="submit" onclick="dispModal()" id="signup">SIGN UP</button>
             </div>
         </div>
-        <div id="popup">
-            <button class="close-btn" onclick="closeForm()">&times;</button>
-            <h2>Log In</h2>
+        <div class="popup" id="popup-sign">
+            <button class="close-btn" id="close" onclick="dispModal()">&times;</button>
+            <h2>Sign Up</h2>
             <form>
-                <div class="input-group">
-                    <div class="input-field">
-                        <input type="email" placeholder="Username/Email" />
-                    </div>
-
-                    <div class="input-field">
-                        <input type="password" placeholder="Password" />
-                    </div>
+              <div class="input-group">
+                <div class="input-field">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="Full Name">
                 </div>
+                <div class="input-field">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" placeholder="Email">
+                </div>
+                <div class="input-row">
+                  <div class="input-field">
+                    <i class="fa-solid fa-phone"></i>
+                    <input type="tel" pattern="[0-9]{10}" placeholder="Phone No">
+                  </div>
+                  <div class="input-field">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <input type="text" placeholder="Gender">
+                  </div>
+                </div>
+                <!--
+                  <div class="input-field">
+                    <select name="gender">
+                      <option value="" ></option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+          
+                    </select>
+                  </div>
+                -->
+                <div class="input-row">
+                  <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                  </div>
+                  <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Confirm Password">
+                  </div>
+                </div>
+      
+              </div>
+      
+              <div class="ca">
+                <button type="submit" id="createaccount">CREATE ACCOUNT</button>
+              </div>
             </form>
+          </div>
+          <div class="loginpopup" id="loginpop">
+            <button class="close-btn" id="closelogin" onclick="displog()">&times;</button>
+            <h2>Log In</h2>
+            <h3>Welcome Back!</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro necessitatibus repudiandae voluptatum </p>
+            <form>
+              <div class="input-group">
+                <div class="input-field">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" placeholder="Phone No/ Email">
+                </div>
+                <div class="input-row">
+                  <div class="input-field">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password">
+                  </div>
+                </div>
+                <div class="ca">
+                  <button type="submit" id="createaccount">SUBMIT</button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-    </div>
     <div class="content">
         <h1>Classes</h1>
         <div class="card" style="width: 18rem;">

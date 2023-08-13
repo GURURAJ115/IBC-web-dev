@@ -53,6 +53,10 @@ a:active {
     padding: 26px 20px;
     font-weight: 400;
     font-size: large;
+    color:black
+}
+.navlist a{
+    color: rgb(31, 31, 157);
 }
 
 .logo {
@@ -75,6 +79,7 @@ a:active {
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+    border:none;
 }
 
 .signin {

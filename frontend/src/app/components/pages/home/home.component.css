@@ -65,106 +65,195 @@
 }
 
 .topcontainer #signup {
-    position: absolute;
-    top: 500px;
-    left: 2cm;
-    display: flex;
-    background-color: #ad343c;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: 600;
-    cursor: pointer;
-    height: 60px;
-    width: 160px;
+    position: relative;
+  font-size: 18px;
+  color:white;
+  font-weight: bold;
+  height: 45px;
+  padding: 10px 20px;
+  background: maroon;
+  overflow: hidden;
+  border-radius: 10px;
+  z-index: 1;
+  transition: 0.5s all ease;
+  top:450px;
+  left: 2cm;
+  border:none;
 }
 
-.popup {
+.popup .close-btn{
+    position: absolute;
+    top:-5px;
+    right:10px;
+    width:20px;
+    height:20px;
+    background: #dad9d9;
+    color:#111;
+    border:none;
+    outline:none;
+    border-radius: 50px;
+    cursor:pointer;
+    font-weight: bold;
+  }
+  
+  .popup{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
-    height: 500px;
-    padding: 20px;
-    background: rgb(246, 240, 240);
+    transform:translate(-50%,-50%);
+    width:450px;
+    height:500px;
+    padding:20px;
+    background:rgb(246, 240, 240);
     border-radius: 10px;
-    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
-    margin-top: 300px;
-    z-index: 1;
-    transition: top 0ms ease-in-out 300ms,
-        opacity 300ms ease-in-out,
-        margin-top 300ms ease-in-out;
-
-}
-
-.popup>* {
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1) ; 
+    margin-top: 300px; 
+    z-index:10;
+    display: none;
+  }
+  .popup > *{
     margin: 15px 0px;
     text-align: center;
-
-}
-
-.popup h2 {
+  }
+   
+  .popup h2{
+    padding-bottom: 12px;
     font-size: 35px;
     position: relative;
-}
-
-.input-field {
-    background-color: #eaeaea;
+  }
+  
+  .input-row{
     display: flex;
-    margin: 40px 15px;
+    margin-top: -24px;
+  }
+  
+  .input-field{
+    background-color: #dad9d9;
+    display: flex;
+    margin: 24px 15px;
     border-radius: 3px;
     align-items: center;
-}
-
-input {
+  }
+  
+  .input-field i{
+    margin-left: 15px;
+  }
+  input{
     width: 100%;
     background: transparent;
     border: 0;
     outline: 0;
-    padding: 10px 15px;
-}
-
-.popup {
+    padding: 12px 15px;
+  }
+  
+  .ca{
+    display: flex;
+    justify-content: center;
+    margin-top: 18px;
+  }
+  
+  form #createaccount{
     position: absolute;
-    top: -5px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background: #eee;
-    color: #111;
+    display: flex;
+    background-color: maroon;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    outline: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .loginpopup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width:450px;
+    height:500px;
+    padding:20px;
+    background:rgb(246, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1) ; 
+    margin-top: 300px; 
+    z-index:10;
+    display: none;
+  }
+  .loginpopup > *{
+    margin: 15px 0px;
+    text-align: center;
+  }
+  .loginpopup h2{
+    padding-bottom: 12px;
+    font-size: 35px;
+    position: relative;
+  }
+  .loginpopup .close-btn{
+    position: absolute;
+    top:-5px;
+    right:10px;
+    width:20px;
+    height:20px;
+    background: #dad9d9;
+    color:#111;
+    border:none;
+    outline:none;
     border-radius: 50px;
     cursor: pointer;
-    visibility: hidden;
-}
-
-.openpopup {
-    visibility: visible;
-}
-
-body.active-popup {
-    overflow: hidden;
-}
-
-body.active-popup .body {
-    filter: blur(5px);
-    background: rgba(0, 0, 0, 0.08);
-    transition: filter 0ms ease-in-out 0ms;
-}
-
-body.active-popup .popup {
-    top: 50%;
-    opacity: 1;
-    margin-top: 0px;
-    transition: top 0ms ease-in-out 0ms,
-        opacity 300ms ease-in-out,
-        margin-top 300ms ease-in-out;
-
-}
+  }
+  
+  
+  .submit button:hover {
+    color: white;
+    cursor: pointer;
+    border: 0px;
+  }
+  
+  .submit button:active {
+    transform: scale(0.85);
+  }
+  
+  .submit button:before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    top: -100%;
+    background:  #6b1313;
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+  
+  .submit button:hover:before {
+    top: 0;
+    left: 0;
+    border: 0px;
+    transform: rotate(180deg);
+  }
+  
+  .submit button:after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    top: 100%;
+    background: #6b1313;
+    transition: all 0.6s ease;
+    z-index: -1;
+  }
+  
+  .submit button:hover:after {
+    top: 0;
+    left: 50%;
+    border: 0px;
+    transform: rotate(180deg);
+  }
 .content{
     position: absolute;
     top: 100%;
