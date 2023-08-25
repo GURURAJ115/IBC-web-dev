@@ -1,12 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 .footer {
     position: absolute;
     z-index: 1;
     width: 100%;
-    top:130%;
+    top: 130%;
 }
 
 .background {
@@ -43,7 +44,17 @@
     gap: 8.4688px;
 }
 
-.contactUs,
+.contactUs {
+    margin-top: 12px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    white-space: nowrap;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+        'Liberation Sans', sans-serif;
+    flex-direction: column;
+}
+
 .address,
 .officeTimings,
 .timings,
@@ -59,15 +70,17 @@
     flex-direction: column;
 }
 
-.rightframe {
+.rightframe .down {
+    font-size: 20px;
+    font-weight: 470;
     position: absolute;
-    left: 800px;
-    top: 480px;
-    width: 498px;
-    height: 262px;
+    left: 400px;
+    top: 230px;
+    width: 600px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8.4688px;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+        'Liberation Sans', sans-serif;
 }
 
 .textBlock {
@@ -76,4 +89,21 @@
     width: min-content;
     flex-direction: column;
     list-style-type: none;
+}
+
+.rightframe .up {
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 400px;
+    top: 40px;
+    width: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Poppins, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
+        'Liberation Sans', sans-serif;
+}
+
+.up li {
+    list-style: none;
 }

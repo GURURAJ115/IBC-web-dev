@@ -1,5 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
+#content {
+    display: block;
+    position: absolute;
+    padding-left: 1.3cm;
+    top: 650px;
+    font-size: 20px;
+    text-align: justify;
+    padding-right: 1cm;
+}
+
+#sp-image1 {
+    top: 370px;
+    left: 50%;
+    width: 40%;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background-size: (100%, 100%);
+    box-shadow: 8px 8px 8px rgb(173, 169, 166);
+}

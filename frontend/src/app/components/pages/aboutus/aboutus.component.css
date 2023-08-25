@@ -1,32 +1,44 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
 .aboutus {
     height: 1456px;
     width: 1365px;
-    top: 100px;
+    margin-top: 150px;
 }
 
 .img-1 {
-    height: 435px;
-    width: 435px;
+    height: 300px;
+    width: 300px;
     background-color: #d9d9d9;
 }
 
 .img-2 {
-    height: 435px;
-    width: 435px;
+    height: 300px;
+    width: 300px;
     background-color: #d9d9d9;
 }
 
 .img-3 {
-    height: 435px;
-    width: 435px;
+    height: 300px;
+    width: 300px;
     background-color: #d9d9d9;
 }
 
-.description {
-    text-align: left;
-    vertical-align: top;
-    font-size: 32px;
-    font-family: Garamond Premier Pro;
-    line-height: auto;
-    color: #000000;
+#description {
+    display:block;
+    position: absolute;
+    padding-left: 1.3cm;
+    top: 500px;
+    font-size: 20px;
+    text-align: justify;
+    padding-right: 1cm;
+}
+.images{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width:100%;
 }

@@ -18,49 +18,50 @@
             </div>
         </div>
         <div class="popup" id="popup-sign">
-            <button class="close-btn" id="close" onclick="dispModal()">&times;</button>
+            <button class="close-btn" id="close" onclick="dispModal()">
+                &times;
+            </button>
             <h2>Sign Up</h2>
             <form>
                 <div class="input-group">
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Full Name">
+                        <input type="text" placeholder="Full Name" />
                     </div>
                     <div class="input-field">
                         <i class="fa-solid fa-envelope"></i>
-                        <input type="email" placeholder="Email">
+                        <input type="email" placeholder="Email" />
                     </div>
                     <div class="input-row">
                         <div class="input-field">
                             <i class="fa-solid fa-phone"></i>
-                            <input type="tel" pattern="[0-9]{10}" placeholder="Phone No">
+                            <input type="tel" pattern="[0-9]{10}" placeholder="Phone No" />
                         </div>
                         <div class="input-field">
                             <i class="fa-solid fa-venus-mars"></i>
-                            <input type="text" placeholder="Gender">
+                            <input type="text" placeholder="Gender" />
                         </div>
                     </div>
                     <!--
-                  <div class="input-field">
-                    <select name="gender">
-                      <option value="" ></option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-          
-                    </select>
-                  </div>
-                -->
+                    <div class="input-field">
+                      <select name="gender">
+                        <option value="" ></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+            
+                      </select>
+                    </div>
+                  -->
                     <div class="input-row">
                         <div class="input-field">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Password" />
                         </div>
                         <div class="input-field">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Confirm Password">
+                            <input type="password" placeholder="Confirm Password" />
                         </div>
                     </div>
-
                 </div>
 
                 <div class="ca">
@@ -69,21 +70,25 @@
             </form>
         </div>
         <div class="loginpopup" id="loginpop">
-            <button class="close-btn" id="closelogin" onclick="displog()">&times;</button>
+            <button class="close-btn" id="closelogin" onclick="displog()">
+                &times;
+            </button>
             <h2>Log In</h2>
             <h3>Welcome Back!</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro necessitatibus repudiandae
-                voluptatum </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro
+                necessitatibus repudiandae voluptatum
+            </p>
             <form>
                 <div class="input-group">
                     <div class="input-field">
                         <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Phone No/ Email">
+                        <input type="text" placeholder="Phone No/ Email" />
                     </div>
                     <div class="input-row">
                         <div class="input-field">
                             <i class="fa-solid fa-lock"></i>
-                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Password" />
                         </div>
                     </div>
                     <div class="ca">
@@ -93,16 +98,75 @@
             </form>
         </div>
     </div>
-    <button type="submit" id="signup" (click)="openDialog()">SIGN UP</button>
-    <div class="content">
-        <h1>Classes</h1><br>
-        <div class="card">
-            <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap">
-            <div class="card-body">
-                <p class="card-title">Card title</p>
-                <p class="card-text">Some quick example text</p>
-                <a href="#" class="button">Read more</a>
+
+    <div class="content" id="events">
+        <h1>Classes</h1>
+        <br />
+        <div class="scroll-container">
+            <div class="scroll-content" id="scrollcont">
+                <div class="card">
+                    <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                        <p class="card-text">Some quick example text</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                        <p class="card-text">Some quick example text</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                        <p class="card-text">Some quick example text</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                        <p class="card-text">Some quick example text</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                        <p class="card-text">Some quick example text</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                        <p class="card-text">Some quick example text</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="assets/cimg1.png" alt="Card image cap" />
+                    <div class="card-body">
+                        <p class="card-title">Card title</p>
+                        <p class="card-text">Some quick example text</p>
+                        <a href="#" class="button">Read more</a>
+                    </div>
+                </div>
             </div>
+            <button id="scroll-left" onclick="scroll()">
+                &#8676;
+            </button>
+            <button id="scroll-right" onclick="scroll()">
+                &#8677;
+            </button>
         </div>
     </div>
 </body>
