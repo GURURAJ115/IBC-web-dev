@@ -230,7 +230,7 @@ form #createaccount {
   top: 0%;
   left: -50%;
   top: -100%;
-  background: #136b13;
+  background: #670f0f;
   transition: all 0.6s ease;
   z-index: -1;
 }
@@ -251,7 +251,7 @@ form #createaccount {
   top: 0%;
   left: 100%;
   top: 100%;
-  background: #131a6b;
+  background: #670f0f;
   transition: all 0.6s ease;
   z-index: -1;
 }
@@ -328,26 +328,16 @@ form #createaccount {
   width: max-content;
   white-space: nowrap;
 }
-
-.scroll-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 20px;
-  padding: 5px 10px;
-  border: none;
-  background-color: lightgrey;
-  cursor: pointer;
-  height: 100%;
+.scroll-content::-webkit-scrollbar {
+  height: 4px;
 }
-
-.left {
-  left: 0px;
+.scroll-content::-webkit-scrollbar-track { 
+  border-radius: 5px;
 }
-
-.right {
-  right: 0px;
+.scroll-content::-webkit-scrollbar-thumb {
+  background: lightgray; 
+  border-radius: 5px;
 }
-.scroll-container::-webkit-scrollbar {
-  display: none;
+.scroll-content::-webkit-scrollbar-thumb:hover {
+  background: darkgray; 
 }
