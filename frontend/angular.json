@@ -115,13 +115,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              ""
+              "src/styles.css"
             ],
-            "scripts": [
-              "src/assets/script.js",
-              "src/assets/app.js"
-            ]
+            "scripts": []
           }
         }
       }
