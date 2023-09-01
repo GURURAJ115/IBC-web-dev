@@ -52,10 +52,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-              "src/assets/script.js",
-              "src/assets/app.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {

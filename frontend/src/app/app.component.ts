@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-declare function greet(): void;
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +7,4 @@ declare function greet(): void;
 })
 export class AppComponent {
   title = 'frontend';
-  constructor(){
-    greet();
-  }
 }

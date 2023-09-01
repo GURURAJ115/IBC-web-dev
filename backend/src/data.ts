@@ -1,4 +1,4 @@
-import {main} from './app/shared/models/main';
+import {main} from '../../frontend/src/app/shared/models/main';
 
 export const sample_main: main[]=[
     {name:"Gururaj",

@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { sample_main } from "./data";
 
 const app = express();
 app.use(cors({
@@ -7,8 +8,9 @@ app.use(cors({
     origin:["http://localhost:4200"]
 }));
 
-app.get("/api/IBC",(req,res)=>{
-    res.send("hello world");
+app.use("/api/aboutus",(req,res)=>
+{
+    res.send(sample_main)
 })
 
 const port = 5000;
