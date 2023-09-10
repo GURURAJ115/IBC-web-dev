@@ -1,0 +1,143 @@
+body {
+    border: 100px;
+    border-color: brown;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: brown;
+    overflow-x: hidden;
+    padding-top: 100px;
+    border-left: 5px solid transparent;
+
+
+}
+
+.sidebar a {
+    padding: 20px 15px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: white;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar a.classes {
+    border-left-color: brown;
+    border-radius: 10px;
+    /* Use the sidebar's background color */
+}
+
+.sidebar a.events {
+    border-left-color: brown;
+}
+
+.sidebar a.volunteer {
+    border-left-color: brown;
+}
+
+.sidebar a.nearby-center {
+    border-left-color: brown;
+}
+
+.sidebar a.profile {
+    border-left-color: brown;
+}
+
+body {
+    border: 30px solid brown;
+    border-radius: 5px;
+    margin: 0%;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    /* Adjust the top position */
+    left: 10px;
+    /* Adjust the left position */
+    width: 75px;
+    /* Set the logo width */
+    height: 75px;
+    /* Set the logo height */
+}
+
+.sidebar a.active {
+    background-color: white;
+    color: #111;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.content {
+    margin-left: 250px;
+    /* Sidebar width */
+    padding: 20px;
+}
+
+/* Styles for the cards... */
+
+/* Style for the input form */
+.input-form {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Style for the card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+/* Style for each card */
+.card {
+    width: 300px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for card title */
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Style for card image */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Style for the "Read More" button */
+.read-more-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}

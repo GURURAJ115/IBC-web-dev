@@ -14,6 +14,7 @@ import { SpComponent } from './components/pages/sp/sp.component';
 import { RouterModule } from '@angular/router';
 import { SignupComponent } from './components/pages/signup/signup.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { LoggedinComponent } from './components/pages/loggedin/loggedin.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     TempleComponent,
     DonationsComponent,
     SpComponent,
-    SignupComponent
+    SignupComponent,
+    LoggedinComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +55,10 @@ import { MatDialogModule } from '@angular/material/dialog';
         path:'donations',
         component:DonationsComponent
       },
+      {
+        path:'loggedin',
+        component:LoggedinComponent
+      }
     ])
   ],
   providers: [],
