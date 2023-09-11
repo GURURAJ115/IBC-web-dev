@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/partials/header/header.component';
 import { HomeComponent } from './components/pages/home/home.component';
-import { FooterComponent } from './components/partials/footer/footer.component';
 import { AboutusComponent } from './components/pages/aboutus/aboutus.component';
 import { PagesComponent } from './components/pages/pages.component';
 import { TempleComponent } from './components/pages/temple/temple.component';
@@ -21,7 +20,6 @@ import { LoggedinComponent } from './components/pages/loggedin/loggedin.componen
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    FooterComponent,
     AboutusComponent,
     PagesComponent,
     TempleComponent,
