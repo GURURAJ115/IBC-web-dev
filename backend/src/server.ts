@@ -1,6 +1,11 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from "express";
 import cors from "cors";
-import { sample_main } from "./data";
+import { sample_users } from "./data";
+import {dbConnect} from './configs/database.config';
+dbConnect();
 
 const app = express();
 app.use(cors({
@@ -10,7 +15,7 @@ app.use(cors({
 
 app.use("/api/aboutus",(req,res)=>
 {
-    res.send(sample_main)
+    res.send(sample_users)
 })
 
 const port = 5000;

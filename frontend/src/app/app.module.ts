@@ -14,6 +14,7 @@ import { RouterModule } from '@angular/router';
 import { SignupComponent } from './components/pages/signup/signup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { LoggedinComponent } from './components/pages/loggedin/loggedin.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,8 @@ import { LoggedinComponent } from './components/pages/loggedin/loggedin.componen
     AppRoutingModule,
     MatDialogModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot([
       {
         path:'',

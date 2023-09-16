@@ -1,6 +1,6 @@
 import {main} from '../../frontend/src/app/shared/models/main';
 
-export const sample_main: main[]=[
+export const sample_users: main[]=[
     {name:"Gururaj",
     phone:9019954083,
     email:"gururajsnaik115@gmail.com",
