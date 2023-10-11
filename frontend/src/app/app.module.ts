@@ -15,6 +15,11 @@ import { SignupComponent } from './components/pages/signup/signup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { LoggedinComponent } from './components/pages/loggedin/loggedin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AdminComponent } from './components/pages/admin/admin.component';
+import { DashboardComponent } from './components/pages/admin/dashboard/dashboard.component';
+import { ClassesComponent } from './components/pages/admin/classes/classes.component';
+import { EventsComponent } from './components/pages/admin/events/events.component';
+import { SettingsComponent } from './components/pages/admin/settings/settings.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +32,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DonationsComponent,
     SpComponent,
     SignupComponent,
-    LoggedinComponent
+    LoggedinComponent,
+    AdminComponent,
+    DashboardComponent,
+    ClassesComponent,
+    EventsComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
@@ -59,6 +69,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
       {
         path:'loggedin',
         component:LoggedinComponent
+      },
+      {
+        path:'signup',
+        component:SignupComponent
+      },
+      {
+        path:'admin',
+        component:AdminComponent
+      },
+      {
+        path:'admin/dashboards',
+        component:DashboardComponent
       }
     ])
   ],

@@ -53,10 +53,8 @@ export class SignupComponent implements OnInit {
       confirmPassword: fv.confirmPassword,
       address: fv.address
     };
-
-    this.userService.register(user).subscribe(_ => {
+    this.userService.register(user).subscribe(() => {
       this.router.navigateByUrl(this.returnUrl);
     })
   }
-
 }

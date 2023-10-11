@@ -1,0 +1,81 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Admin Portal</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets\logo.png">
+        <h1>Admin Portal</h1>
+        <div class="logo">
+            <a href=""><i class="fas fa-home"></i></a>
+            <a href="https://www.instagram.com/iskcon_kannamangala/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/playlist?list=PLod_03YpFEvf2kF3LPZSxH1ffVJxIoo0f" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/p/Iskcon-Kannamangala-100083562930704/" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+        </div>
+    </header>
+
+    <div id="content">
+        <nav>
+            <ul>
+                <li><a href="/admin/dashboards">Dashboard</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#donations">Donations</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+
+            <div class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><input type="text" id="new-seva-type" placeholder="Seva Type"></td>
+                            <td><input type="number" id="new-total-count" placeholder="Total Count"></td>
+                            <td><input type="number" id="new-completed" placeholder="Completed"></td>
+                            <td><input type="number" id="new-in-progress" placeholder="In Progress"></td>
+                            <td><button id="add-seva-data">Add</button></td>
+                        </tr>
+                        <tr>
+                            <th>Seva Type</th>
+                            <th>Total Count</th>
+                            <th>Completed</th>
+                            <th>In Progress</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Annadana</td>
+                            <td>50</td>
+                            <td>35</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Goseva</td>
+                            <td>30</td>
+                            <td>22</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday Feast</td>
+                            <td>40</td>
+                            <td>30</td>
+                            <td>10</td>
+                        </tr>
+                        <!-- Add more rows for additional seva types -->
+
+
+
+                    </tbody>
+                </table>
+            </div>
+
+
+    <script src="assets/working.js"></script>
+

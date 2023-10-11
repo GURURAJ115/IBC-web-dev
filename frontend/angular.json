@@ -52,7 +52,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/working.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -114,7 +116,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/working.js"
+            ]
           }
         }
       }
