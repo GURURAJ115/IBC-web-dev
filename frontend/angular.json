@@ -1,13 +1,13 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.",
   "version": 1,
-  "newProjectRoot": "projects",
+  "": "projects",
   "projects": {
     "frontend": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:class": {
-          "skipTests": true
+          "skipTests": 
         },
         "@schematics/angular:component": {
           "skipTests": true
@@ -53,8 +53,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/script.js",
-              "src/assets/app.js"
+              
             ]
           },
           "configurations": {
