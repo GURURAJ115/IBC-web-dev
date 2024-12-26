@@ -1,6 +1,7 @@
+/* General Reset */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,7 +11,7 @@
   position: relative;
   background-size: cover;
   background-position: center;
-  transition: filter 0ms ease-in-out 0ms;
+  transition: filter 0ms ease-in-out;
   background-color: rgb(242, 220, 190);
 }
 
@@ -82,250 +83,40 @@
   border: none;
 }
 
-.popup .close-btn {
+/* Cards */
+.content {
+  margin-top: 80px;
   position: absolute;
-  top: -5px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  background: #dad9d9;
-  color: #111;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.popup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
-  height: 500px;
-  padding: 20px;
-  background: rgb(246, 240, 240);
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 300px;
-  z-index: 10;
-  display: none;
-}
-.popup > * {
-  margin: 15px 0px;
-  text-align: center;
-}
-
-.popup h2 {
-  padding-bottom: 12px;
-  font-size: 35px;
-  position: relative;
-}
-
-.input-row {
-  display: flex;
-  margin-top: -24px;
-}
-
-.input-field {
-  background-color: #dad9d9;
-  display: flex;
-  margin: 24px 15px;
-  border-radius: 3px;
-  align-items: center;
-}
-
-.input-field i {
-  margin-left: 15px;
-}
-input {
-  width: 100%;
-  background: transparent;
-  border: 0;
-  outline: 0;
-  padding: 12px 15px;
-}
-
-.ca {
-  display: flex;
-  justify-content: center;
-  margin-top: 18px;
-}
-
-form #createaccount {
-  position: absolute;
-  display: flex;
-  background-color: maroon;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  font-weight: 600;
-  cursor: pointer;
-}
-.loginpopup {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 450px;
-  height: 500px;
-  padding: 20px;
-  background: rgb(246, 240, 240);
-  border-radius: 10px;
-  box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.1);
-  margin-top: 300px;
-  z-index: 10;
-  display: none;
-}
-.loginpopup > * {
-  margin: 15px 0px;
-  text-align: center;
-}
-.loginpopup h2 {
-  margin-top: 18px;
-  font-size: 35px;
-  position: relative;
-}
-.loginpopup h3 {
-  margin-top: 40px;
-}
-.loginpopup p{
-  padding-left: 15px;
-  padding-right: 15px;
-  text-align: justify;
-}
-.loginpopup .close-btn {
-  position: absolute;
-  top: -5px;
-  right: 10px;
-  width: 20px;
-  height: 20px;
-  background: #dad9d9;
-  color: #111;
-  border: none;
-  outline: none;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.submit button:hover {
-  color: white;
-  cursor: pointer;
-  border: 0px;
-}
-
-.submit button:active {
-  transform: scale(0.85);
-}
-
-.submit button:before {
-  content: "";
-  width: 50%;
-  height: 100%;
-  margin: auto;
-  position: absolute;
-  top: 0%;
-  left: -50%;
-  top: -100%;
-  background: #136b13;
-  transition: all 0.6s ease;
-  z-index: -1;
-}
-
-.submit button:hover:before {
-  top: 0;
-  left: 0;
-  border: 0px;
-  transform: rotate(180deg);
-}
-
-.submit button:after {
-  content: "";
-  width: 50%;
-  height: 100%;
-  margin: auto;
-  position: absolute;
-  top: 0%;
-  left: 100%;
   top: 100%;
-  background: #131a6b;
-  transition: all 0.6s ease;
-  z-index: -1;
-}
-
-.submit button:hover:after {
-  top: 0;
-  left: 50%;
-  border: 0px;
-  transform: rotate(180deg);
-}
-.content1 {
-  position: absolute;
-  top: 90%;
   left: 10%;
-  overflow-x: scr;
+  overflow-x: auto;
   max-width: 1200px;
 }
 
-.content2 {
-  position: absolute;
-  top: 150%;
-  left: 10%;
-  overflow-x: scr;
-  max-width: 1200px;
-}
-
-#seva-cards {
+.card {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-.seva-card {
-  width: 30%;
-  margin: 10px 5px;
-  padding: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgb(241, 240, 240);
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-  /* text-align: center; */
+  width: 200px;
+  height: 300px;
 }
 
-.seva-card img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+.card-img-top {
+  align-self: center;
+  width: 90%;
+  height: 50%;
 }
 
-.seva-card h2 {
-  font-size: 20px;
-  text-align: left;
-  margin: 5px 0;
+.card-body {
+  width: 90%;
 }
 
-.seva-card p {
-  text-align: left;
-  margin-bottom: 10px;
+.card-title {
+  margin-bottom: 20px;
+  font-weight: 800;
 }
-
-.seva-card a {
-  display: inline-block;
-  background-color: maroon;
-  color: #fff;
-  padding: 6px 8px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.seva-card a:hover {
-  background-color: #555;
-}
-
 
 .button {
   display: flex;
@@ -336,12 +127,11 @@ form #createaccount {
   margin-top: 10%;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
   border-radius: 6px;
-  /* height: 10px; */
-  /* width:10px; */
 }
+
+/* Scrollable Container */
 .scroll-container {
   position: relative;
   overflow: hidden;
@@ -358,20 +148,19 @@ form #createaccount {
   white-space: nowrap;
 }
 
-.scroll-container::-webkit-scrollbar {
-  display: none;
-}
-
 .scroll-content::-webkit-scrollbar {
   height: 4px;
 }
-.scroll-content::-webkit-scrollbar-track { 
+
+.scroll-content::-webkit-scrollbar-track {
   border-radius: 5px;
 }
+
 .scroll-content::-webkit-scrollbar-thumb {
-  background: lightgray; 
+  background: lightgray;
   border-radius: 5px;
 }
+
 .scroll-content::-webkit-scrollbar-thumb:hover {
-  background: darkgray; 
+  background: darkgray;
 }
