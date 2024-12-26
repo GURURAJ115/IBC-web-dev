@@ -1,0 +1,69 @@
+    <script>
+        function setActive(button) {
+            const buttons = document.querySelectorAll('.sidebar a');
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        }
+        function createCard(title, image) {
+            const card = document.createElement('div');
+            card.classList.add('card');
+
+            const cardTitle = document.createElement('h2');
+            cardTitle.classList.add('card-title');
+            cardTitle.textContent = title;
+
+            const cardImage = document.createElement('img');
+            cardImage.classList.add('card-image');
+            cardImage.src = image;
+            cardImage.alt = title;
+
+            const readMoreButton = document.createElement('button');
+            readMoreButton.classList.add('read-more-button');
+            readMoreButton.textContent = 'Read More';
+
+            card.appendChild(cardTitle);
+            card.appendChild(cardImage);
+            card.appendChild(readMoreButton);
+
+            return card;
+        }
+
+        // Add a card when the button is clicked
+        const cardContainer = document.getElementById('cardContainer');
+        const createCardButton = document.getElementById('createCardButton');
+
+        createCardButton.addEventListener('click', () => {
+            const titleInput = document.getElementById('titleInput');
+            const imageInput = document.getElementById('imageInput');
+
+            const title = titleInput.value;
+            const image = imageInput.value;
+
+            if (title && image) {
+                const card = createCard(title, image);
+                cardContainer.appendChild(card);
+                titleInput.value = '';
+                imageInput.value = '';
+            }
+        })
+    </script>
+
+<body>
+    <div class="sidebar">
+        <a href="#" id="class" onclick="setActive(this)">Classes</a>
+        <a href="#" id="events" onclick="setActive(this)">Events</a>
+        <a href="#" id="volunteer" onclick="setActive(this)">Volunteer</a>
+        <a href="#" id="nearby-center" onclick="setActive(this)">Near by centers</a>
+        <a href="#" id="Profile" onclick="setActive(this)">Profile</a>
+    </div>
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <div class="card-container" id="cardContainer">
+        <!-- Cards will be added here dynamically -->
+    </div>
+
+    <!-- <div class="input-form">
+        <input type="text" id="titleInput" placeholder="Title">
+        <input type="text" id="imageInput" placeholder="Image URL">
+        <button id="createCardButton">Create Card</button>
+    </div> -->
+</body>

@@ -1,0 +1,226 @@
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Admin Portal</title>
+</head>
+
+<body>
+    <header>
+        <img src="assets\logo.png">
+        <h1>Admin Portal</h1>
+        <div class="logo">
+            <a href=""><i class="fas fa-home"></i></a>
+            <a href="https://www.instagram.com/iskcon_kannamangala/" target="_blank"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/playlist?list=PLod_03YpFEvf2kF3LPZSxH1ffVJxIoo0f" target="_blank"><i
+                    class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.facebook.com/p/Iskcon-Kannamangala-100083562930704/" target="_blank"><i
+                    class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+        </div>
+    </header>
+
+    <div id="content">
+        <nav>
+            <ul>
+                <li><a href="/admin/dashboards">Dashboard</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#donations">Donations</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="homepage" class="content">
+                <img src="assets/home.jpeg" alt="Temple Image">
+                <!-- <h2>Welcome to the Temple Admin Portal</h2>
+                <p>Manage your temple's activities and data with ease.</p> -->
+            </section>
+
+            <section id="dashboards" class="content">
+                <table>
+                    <thead>
+                        <tr>
+                            <td><input type="text" id="new-seva-type" placeholder="Seva Type"></td>
+                            <td><input type="number" id="new-total-count" placeholder="Total Count"></td>
+                            <td><input type="number" id="new-completed" placeholder="Completed"></td>
+                            <td><input type="number" id="new-in-progress" placeholder="In Progress"></td>
+                            <td><button id="add-seva-data">Add</button></td>
+                        </tr>
+                        <tr>
+                            <th>Seva Type</th>
+                            <th>Total Count</th>
+                            <th>Completed</th>
+                            <th>In Progress</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Annadana</td>
+                            <td>50</td>
+                            <td>35</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Goseva</td>
+                            <td>30</td>
+                            <td>22</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday Feast</td>
+                            <td>40</td>
+                            <td>30</td>
+                            <td>10</td>
+                        </tr>
+                        <!-- Add more rows for additional seva types -->
+
+
+
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="classes" class="content">
+                <!-- <h2>Members</h2> -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Name</th>
+                            <th>Total</th>
+                            <th>Present</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>01/10/2023</td>
+                            <td>Bhagavadgita</td>
+                            <td>60</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>02/10/2023</td>
+                            <td>Bhagavatam</td>
+                            <td>60</td>
+                            <td>52</td>
+                        </tr>
+                        <tr>
+                            <td>03/10/2023</td>
+                            <td>Vedic Scriptures</td>
+                            <td>60</td>
+                            <td>54</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="events" class="content">
+                <!-- <h2>Events</h2> -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event</th>
+                            <th>Date</th>
+                            <th>Attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Kirtan</td>
+                            <td>2023-09-10</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Mahaprasadam</td>
+                            <td>2023-09-12</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Mangalarati</td>
+                            <td>2023-09-15</td>
+                            <td>80</td>
+                        </tr>
+                        <!-- Add more rows for additional events -->
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="donations" class="content">
+                <!-- <h2>Donations</h2> -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Seva Type</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Puja Offering</td>
+                            <td>50,000/-</td>
+                            <td>2023-09-10</td>
+                        </tr>
+                        <tr>
+                            <td>Prasadam</td>
+                            <td>10,000/-</td>
+                            <td>2023-09-12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="settings" class="content">
+                <!-- <h2>Settings</h2> -->
+                <!-- Add the Edit and Save buttons for name and phone number -->
+                <div class="profile-settings">
+                    <h3>Profile</h3>
+                    <p id="full-name-display">Full Name: Aindra Das</p>
+                    <button id="edit-name">Edit Name</button>
+                    <input type="text" id="full-name" placeholder="Aindra Das" style="display: none">
+
+                    <p id="email-display">Email: ibck@gmail.com</p>
+                    <button id="edit-email">Edit Email</button>
+                    <input type="email" id="email" placeholder="ibck@gmail.com" style="display: none">
+
+                    <button id="save-profile">Save</button>
+                </div>
+
+                <div class="phone-settings">
+                    <h3>Phone Number</h3>
+                    <p id="phone-number-display">Phone Number: 9740231832</p>
+                    <button id="edit-phone">Edit Phone Number</button>
+                    <input type="tel" id="phone-number" placeholder="9740231832" style="display: none">
+
+                    <button id="save-phone">Save</button>
+                </div>
+
+                <div class="password-settings">
+                    <h3>Change Password</h3>
+                    <label for="current-password">Current Password</label>
+                    <input type="password" id="current-password">
+
+                    <label for="new-password">New Password</label>
+                    <input type="password" id="new-password">
+
+                    <label for="confirm-password">Confirm New Password</label>
+                    <input type="password" id="confirm-password">
+
+                    <button id="change-password">Change Password</button>
+                </div>
+
+                <button id="update-settings">Update</button>
+
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; IBC Kannamangala </p>
+    </footer>
+
+    <script src="assets/working.js"></script>
+</body>

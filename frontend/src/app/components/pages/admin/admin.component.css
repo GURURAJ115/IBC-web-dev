@@ -1,0 +1,139 @@
+/* Reset some default styles for a cleaner look */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    background-color: #FFF7EE;
+    color: black;
+    padding: 10px;
+    /* border: 2px solid rgb(146, 69, 69); */
+    height: 100px;
+    align-items: center; /* Center vertically */
+}
+
+header img {
+    height: 80px;
+    width: 80px;
+    margin-left: 15px;
+}
+
+header h1 {
+    margin-left: 30px;
+}
+
+#content {
+    display: flex;
+    flex: 1;
+}
+
+nav {
+    background-color: #800000;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #FFF7EE;
+    color: black;
+}
+
+nav a.active {
+    background-color: #FFF7EE;
+    color: black;
+}
+
+main {
+    flex: 1;
+    overflow: auto;
+    padding: 20px;
+    background-color: rgb(187, 179, 179);
+}
+
+/* Your existing CSS code */
+/* ... */
+
+/* Style for the homepage image section */
+#homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+}
+
+#homepage img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    display: none;
+}
+
+/* ... */
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 30px;
+    font-size: 25px;
+    gap: 30px;
+    align-items: center;
+}
+
+a {
+    color: inherit;
+}
+
+/* Style for tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

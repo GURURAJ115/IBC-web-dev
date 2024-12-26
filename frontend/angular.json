@@ -53,7 +53,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              
+
             ]
           },
           "configurations": {
@@ -116,7 +116,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/working.js"
+            ]
           }
         }
       }

@@ -1,5 +1,11 @@
+import dotenv from "dotenv";
+dotenv.config();
+
 import express from "express";
 import cors from "cors";
+import { sample_users } from "./data";
+import {dbConnect} from './configs/database.config';
+dbConnect();
 
 const app = express();
 app.use(cors({
@@ -7,12 +13,12 @@ app.use(cors({
     origin:["http://localhost:4200"]
 }));
 
-app.get("/api/IBC",(req,res)=>{
-    res.send("hello world");
+app.use("/api/aboutus",(req,res)=>
+{
+    res.send(sample_users)
 })
 
 const port = 5000;
 app.listen(port,()=>{
     console.log("Website served on http://localhost:"+port)
 })
-
